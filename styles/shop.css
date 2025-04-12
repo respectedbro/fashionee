@@ -1,0 +1,33 @@
+.shop {
+  display: flex;
+  gap: 50px;
+}
+
+.shop .sidebar {
+  width: 244px; /* TODO: убери жесткую величину */
+}
+
+.shop .products-wrapper {
+  max-width: 846px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.shop .products-wrapper .sort-and-count {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.shop .products-wrapper .products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+}
+
+.shop .products-wrapper .products .product {
+  max-width: 262px;
+  width: 100%;
+}
