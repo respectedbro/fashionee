@@ -1,0 +1,76 @@
+.footer {
+}
+
+.footer .footer-info {
+  margin: 0 0 90px 0;
+  display: flex;
+}
+
+.footer .footer-info .column {
+}
+
+.footer .footer-info .column.column-1 {
+  max-width: 331px;
+  margin: 0 60px 0 0;
+}
+
+.footer .footer-info .column.column-2,
+.footer .footer-info .column.column-3 {
+}
+
+.footer .footer-info .column .logo {
+  margin: 0 0 25px 0;
+}
+
+.footer .footer-info .column .about-brand {
+  padding: 0 0 25px 0;
+  border-bottom: 1px solid #444444;
+  margin: 0 0 35px 0;
+}
+
+.footer .footer-info .column .find-us {
+}
+
+.footer .footer-info .column .find-us .find-us-text {
+  margin: 0 0 20px 0;
+}
+
+.footer .footer-info .column .find-us .find-us-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer .footer-info .column .find-us .find-us-links .find-us-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer .footer-info .column .find-us .find-us-links .line {
+  border-bottom: 1px solid #444444;
+  height: 1px;
+  width: 10px;
+  align-items: center;
+}
+
+.footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  border-top: 1px solid #444444;
+  padding-top: 23px;
+}
+
+.footer .copyright .payment-methods-container {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.footer .copyright .payment-methods-container .payment-methods {
+  display: flex;
+  gap: 8px;
+}
+
+.footer .copyright .payment-methods-container .payment-methods .payment-method {
+}
