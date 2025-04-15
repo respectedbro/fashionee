@@ -10,7 +10,80 @@
 .cart .order-wrapper .product-list {
   max-width: 720px;
   width: 100%;
-  border: 1px solid #000; /*TODO:  удали */
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.cart .order-wrapper .product-list .product {
+  display: flex;
+  position: relative;
+  gap: 30px;
+}
+
+.cart .order-wrapper .product-list .product .photo {
+  max-width: 130px;
+  width: 100%;
+  height: 140px;
+  background: #f1f2f3 url("../images/no-photo.webp") center/contain no-repeat;
+}
+
+.cart .order-wrapper .product-list .product .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cart .order-wrapper .product-list .product .product-info .title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.cart .order-wrapper .product-list .product .product-info .price-wrapper {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.cart
+  .order-wrapper
+  .product-list
+  .product
+  .product-info
+  .price-wrapper
+  .price-and-quantity {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.cart
+  .order-wrapper
+  .product-list
+  .product
+  .product-info
+  .price-wrapper
+  .price-and-quantity
+  .quantity {
+  width: 109px;
+  height: 50px;
+}
+
+.cart
+  .order-wrapper
+  .product-list
+  .product
+  .product-info
+  .price-wrapper
+  .total-price {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #000;
 }
 
 .cart .order-wrapper .order {
