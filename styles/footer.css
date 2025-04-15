@@ -9,12 +9,12 @@
 .footer .footer-info .column {
 }
 
-.footer .footer-info .column. .title,
-.footer .footer-info .column. .title {
+.footer .footer-info .column .title {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
+  color: #000;
 }
 
 .footer .footer-info .column.column-1 {
@@ -49,11 +49,9 @@
 .footer .footer-info .column.column-2 .links a,
 .footer .footer-info .column.column-3 .links a {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: #444;
 }
 
 .footer .footer-info .column.column-4 {
@@ -66,23 +64,16 @@
 
 .footer .footer-info .column.column-4 .newsletter-text {
   margin: 0 0 36px 0;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .footer .footer-info .column.column-4 .newsletter-form {
   position: relative;
 }
 
-.footer .footer-info .column.column-4 .newsletter-form .newsletter-email {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #444444;
-  padding: 0 0 16px 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  color: #444;
-  outline: none;
+.footer .footer-info .column.column-4 .newsletter-form .input {
+  padding-right: 30px;
 }
 
 .footer .footer-info .column.column-4 .newsletter-form .send-icon {
@@ -98,13 +89,18 @@
   padding: 0 0 25px 0;
   border-bottom: 1px solid #444444;
   margin: 0 0 35px 0;
-}
-
-.footer .footer-info .column .find-us {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
 }
 
 .footer .footer-info .column .find-us .find-us-text {
   margin: 0 0 20px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000;
 }
 
 .footer .footer-info .column .find-us .find-us-links {
@@ -119,7 +115,6 @@
   font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
-  color: #444;
 }
 
 .footer .footer-info .column .find-us .find-us-links .line {

@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/commons.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/commons.css">
     <link rel="stylesheet" href="./styles/shop.css">
     <title>Shop</title>
 </head>
@@ -71,8 +75,8 @@
         <div class="sidebar">
             <div class="search">
                 <label>
-                <input class="input search-row" type="text" placeholder="Search">
-                <img class="search-icon" src="./icons/search.svg" alt="search-icon">
+                    <input class="input search-row" type="text" placeholder="Search">
+                    <img class="search-icon" src="./icons/search.svg" alt="search-icon">
                 </label>
             </div>
             <div class="sidebar-item">
@@ -173,14 +177,14 @@
         <div class="products-wrapper">
             <div class="sort-and-count">
                 <div class="products-count">
-                    There are <b>67</b> products in this category
+                    There are <span class="bold">67</span> products in this category
                 </div>
+                <!--TODO: заменить на кастомный select  -->
                 <div class="sort">
-                    <select>
-                        <option value="relevance">By relevance</option>
-                        <option value="relevance">By relevance</option>
-                        <option value="relevance">By relevance</option>
-                        <option value="relevance">By relevance</option>
+                    <select class="input">
+                        <option value="RELEVANCE">Relevance</option>
+                        <option value="ASC">By ASC</option>
+                        <option value="DESC">By DESC</option>
                     </select>
                 </div>
             </div>
@@ -334,9 +338,11 @@
                 <div class="button left">
                     <img src="./icons/arrow-left.svg" alt="arrow-left">
                 </div>
-                <div class="pages">1</div>
-                <div class="pages">2</div>
-                <div class="pages">3</div>
+                <div class="pages">
+                    <div class="page active">1</div>
+                    <div class="page">2</div>
+                    <div class="page">3</div>
+                </div>
                 <div class="button right">
                     <img src="./icons/arrow-right.svg" alt="arrow-right">
                 </div>
@@ -410,8 +416,10 @@
                 </div>
                 <div class="newsletter-form">
                     <form action="">
-                        <input class="newsletter-email" type="text" placeholder="Enter your email">
-                        <img class="send-icon" src="./icons/send.svg" alt="send-icon">
+                        <label>
+                            <input class="input" type="text" placeholder="Enter your email">
+                            <img class="send-icon" src="./icons/send.svg" alt="send-icon">
+                        </label>
                     </form>
                 </div>
             </div>
