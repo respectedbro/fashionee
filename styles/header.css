@@ -1,8 +1,10 @@
 .header {
-  max-width: 1800px;
+  max-width: 1860px;
+  width: 100%;
   margin: 50px auto 0 auto;
   display: flex;
   justify-content: space-between;
+  padding: 0 60px;
 }
 
 .header .left-side {
@@ -91,6 +93,10 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+}
+
+.header .left-side .menu .menu-item span {
+  color: inherit;
 }
 
 .header .left-side .menu .menu-item .arrow-hover {

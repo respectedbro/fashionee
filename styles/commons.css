@@ -39,12 +39,18 @@
   border: none;
   background-color: rgba(0, 0, 0, 1);
   padding: 17px 74px;
+  width: 100%;
+  text-align: center;
 }
 
 .container .button-wrapper .vertical-line {
   width: 2px;
   height: 100%;
   background-color: rgba(0, 0, 0, 1);
+}
+
+.container .button {
+  cursor: pointer;
 }
 
 .container .price {
@@ -66,4 +72,50 @@
   font-size: 16px;
   line-height: 1;
   text-decoration: line-through;
+}
+
+.container .custom-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container .custom-list .item {
+  color: rgba(68, 68, 68, 1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.container .custom-list .item:hover {
+  color: rgba(255, 142, 142, 1);
+}
+
+.container .custom-list .item::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-image: url("../icons/square.svg");
+}
+
+.container .custom-list .item:hover::before {
+  background-image: url("../icons/square-pink.svg");
+}
+
+.container .custom-list .item.active {
+  color: rgba(255, 142, 142, 1);
+}
+
+.container .custom-list .item.active::before {
+  content: "";
+  background-image: url("../icons/category-line.svg");
+  display: block;
+  width: 25px;
+  height: 3px;
 }
