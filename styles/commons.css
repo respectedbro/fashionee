@@ -56,6 +56,7 @@
 .container .price {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
 .container .price .current-price {

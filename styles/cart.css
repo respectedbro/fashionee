@@ -19,19 +19,23 @@
   display: flex;
   position: relative;
   gap: 30px;
+  align-items: center;
+  padding: 0 0 30px 0;
+  border-bottom: 1px solid rgba(68, 68, 68, 10%);
 }
 
 .cart .order-wrapper .product-list .product .photo {
   max-width: 130px;
   width: 100%;
   height: 140px;
-  background: #f1f2f3 url("../images/no-photo.webp") center/contain no-repeat;
+  background: #f1f2f3 url("../images/no-photo.webp") center/cover no-repeat;
 }
 
 .cart .order-wrapper .product-list .product .product-info {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  width: 100%;
 }
 
 .cart .order-wrapper .product-list .product .product-info .title {
@@ -46,6 +50,7 @@
   display: flex;
   gap: 15px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .cart
@@ -68,8 +73,37 @@
   .price-wrapper
   .price-and-quantity
   .quantity {
-  width: 109px;
-  height: 50px;
+  background: #f8f8fb;
+  display: flex;
+  gap: 20px;
+  padding: 17px 23px;
+}
+
+.cart
+  .order-wrapper
+  .product-list
+  .product
+  .product-info
+  .price-wrapper
+  .price-and-quantity
+  .quantity
+  .count-button {
+  cursor: pointer;
+  color: #999;
+  font-size: 20px;
+}
+
+.cart
+  .order-wrapper
+  .product-list
+  .product
+  .product-info
+  .price-wrapper
+  .price-and-quantity
+  .quantity
+  .count {
+  color: #000;
+  font-size: 18px;
 }
 
 .cart
@@ -84,6 +118,16 @@
   font-size: 20px;
   line-height: 1;
   color: #000;
+}
+
+.cart .order-wrapper .product-list .product .product-info .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid rgba(68, 68, 68, 0.1);
+  padding: 2px 7px;
+  color: rgba(68, 68, 68, 0.1);
+  cursor: pointer;
 }
 
 .cart .order-wrapper .order {
