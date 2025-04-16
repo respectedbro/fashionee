@@ -15,6 +15,16 @@
   height: 130px;
 }
 
+.footer::after {
+  position: absolute;
+  content: "";
+  top: 85px;
+  right: 30px;
+  background-image: url("../icons/points-bottom-big.svg");
+  width: 290px;
+  height: 290px;
+}
+
 .footer .footer-info {
   margin: 110px 0 90px 0;
   display: flex;
