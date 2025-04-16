@@ -1,5 +1,18 @@
 .footer {
+  position: relative;
+  max-width: 1920px;
+  margin: 108px auto 0 auto;
   border-top: 20px solid #eee;
+}
+
+.footer::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 30px;
+  background-image: url("../icons/points-bottom.svg");
+  width: 130px;
+  height: 130px;
 }
 
 .footer .footer-info {

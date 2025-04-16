@@ -1,6 +1,7 @@
 .shop {
   display: flex;
   gap: 50px;
+  margin-top: 200px;
 }
 
 .shop .sidebar {
@@ -378,4 +379,67 @@
   line-height: 1;
   width: 22px;
   color: #000;
+}
+
+.newsletter {
+  max-width: 1680px;
+  margin: 200px auto 0 auto;
+  background-color: #f1f2f3;
+  padding-bottom: 162px;
+}
+.newsletter .newsletter-wrapper {
+  position: relative;
+  max-width: 624px;
+  width: 100%;
+  background-color: #fff;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.newsletter .newsletter-wrapper::after {
+  position: absolute;
+  content: "";
+  top: -32px;
+  right: 30px;
+  background-image: url("../icons/points-bottom.svg");
+  width: 130px;
+  height: 130px;
+}
+
+.newsletter .newsletter-wrapper .info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.newsletter .newsletter-wrapper .info .title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.newsletter .newsletter-wrapper .info .description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.newsletter .newsletter-wrapper .mailing {
+  display: flex;
+  gap: 30px;
+}
+
+.newsletter .newsletter-wrapper .mailing .input {
+}
+
+.newsletter .newsletter-wrapper .mailing .button-wrapper {
+  max-width: 140px;
+}
+
+.newsletter .newsletter-wrapper .mailing .button-wrapper .button {
+  padding: 17px 30px;
 }

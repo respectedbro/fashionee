@@ -7,6 +7,7 @@
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .container .input {
@@ -148,4 +149,49 @@
   height: 1px;
   width: 10px;
   align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.menu .menu-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.menu .menu-item span {
+  color: inherit;
+}
+
+.menu .menu-item .arrow-hover {
+  display: none;
+}
+
+.menu .menu-item.active,
+.menu .menu-item:hover {
+  color: #ff8e8e;
+}
+
+.menu .menu-item.active .arrow-default {
+  display: none;
+}
+
+.menu .menu-item.active .arrow-hover {
+  display: inline-block;
+}
+
+.menu .menu-item:hover .arrow-hover {
+  display: inline-block;
+}
+
+.menu .menu-item:hover .arrow-default {
+  display: none;
 }
