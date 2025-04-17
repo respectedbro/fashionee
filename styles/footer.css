@@ -138,5 +138,39 @@
   gap: 8px;
 }
 
-.footer .copyright .payment-methods-container .payment-methods .payment-method {
+
+@media screen and (max-width: 960px) {
+  .footer {
+    margin: 0 auto 0 auto;
+
+  }
+
+  .footer::after {
+    display: none;
+  }
+
+  .footer .footer-info {
+    margin: 50px 0 40px 0;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer-info .column.column-1,
+  .footer .footer-info .column.column-2,
+  .footer .footer-info .column.column-3,
+  .footer .footer-info .column.column-4 {
+    margin: 0;
+  }
+
+  .footer .copyright {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer .footer-info {
+    gap: 30px;
+  }
 }

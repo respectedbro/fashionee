@@ -182,4 +182,21 @@
   .header .right-side {
     display: none;
   }
+
+  .shop {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shop {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hero-section {
+   flex-direction: column;
+    gap: 15px;
+  }
 }
